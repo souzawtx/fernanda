@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stúdio Detalhes Fernanda | Fernanda Marin Beauty — Vicentina, MS</title>
+    <meta name="description" content="Salão de Beleza em Vicentina, MS. Especialista em Mechas, Colorimetria, Corte, Escova, Selagem, Penteados e Maquiagem. Nota 4,8 no Google. Agende seu horário!">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cormorant Garamond, Alex Brush (Monograma FM) & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: {
+                            950: '#100D0C',
+                            900: '#141110',
+                            800: '#1E1917',
+                            700: '#2A2320',
+                            600: '#3D332E'
+                        },
+                        gold: {
+                            300: '#F3DF99',
+                            400: '#E6C665',
+                            500: '#D4AF37',
+                            600: '#B59024',
+                            700: '#8F6F16'
+                        },
+                        champagne: '#FAF6F0',
+                        sand: '#D8CFC4'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        script: ['"Alex Brush"', 'cursive']
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 10px 35px -5px rgba(212, 175, 55, 0.25)',
+                        'gold-sm': '0 4px 15px -2px rgba(212, 175, 55, 0.18)',
+                        'card-dark': '0 20px 40px -15px rgba(0, 0, 0, 0.7)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos customizados inspirados na identidade visual da fachada */
+        body {
+            background-color: #141110;
+            color: #FAF6F0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Gradiente metálico dourado para textos de destaque */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF3D1 0%, #E6C665 35%, #D4AF37 65%, #AA821C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gradiente metálico dourado para botões */
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #E6C665 0%, #D4AF37 50%, #B59024 100%);
+        }
+        
+        .bg-gold-gradient:hover {
+            background: linear-gradient(135deg, #F3DF99 0%, #E6C665 50%, #C7A02E 100%);
+        }
+
+        /* Efeito de brilho sutil no fundo */
+        .radial-spotlight {
+            background: radial-gradient(circle at 75% 25%, rgba(212, 175, 55, 0.14) 0%, rgba(30, 25, 23, 0.05) 45%, transparent 70%);
+        }
+
+        /* Textura de mármore escuro / ondas douradas sutis */
+        .luxury-pattern {
+            background-image: 
+                radial-gradient(at 15% 15%, rgba(212, 175, 55, 0.08) 0px, transparent 50%),
+                radial-gradient(at 85% 80%, rgba(230, 198, 101, 0.06) 0px, transparent 50%);
+        }
+
+        /* Bordas douradas translúcidas */
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.22);
+        }
+
+        .gold-border-hover {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .gold-border-hover:hover {
+            border-color: rgba(230, 198, 101, 0.65);
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px -10px rgba(212, 175, 55, 0.22);
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #141110;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3D332E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        /* Animação suave de pulso para o botão de WhatsApp */
+        @keyframes pulse-gold {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+        .whatsapp-pulse {
+            animation: pulse-gold 2.5s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-espresso-950">
+
+    <!-- Notificação Toast Customizada (Sem uso de alert) -->
+    <div id="toast-notification" class="fixed top-24 right-5 z-50 transform translate-x-[150%] transition-transform duration-500 bg-espresso-800 border border-gold-500 text-champagne px-5 py-3.5 rounded-2xl shadow-gold-glow flex items-center gap-3 max-w-sm">
+        <div class="w-8 h-8 rounded-full bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 shrink-0">
+            <i class="fa-solid fa-check text-sm"></i>
+        </div>
+        <div>
+            <p id="toast-title" class="text-sm font-semibold text-gold-300">Sucesso!</p>
+            <p id="toast-message" class="text-xs text-sand">Informação copiada.</p>
+        </div>
+    </div>
+
+    <!-- Barra Superior de Informações Rápidas -->
+    <div class="bg-espresso-950 border-b border-gold-500/15 text-xs text-sand/90 py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-400"></i>
+                    <span>R. Projetada A2 - Vicentina, MS</span>
+                </span>
+                <span class="hidden sm:inline-flex items-center gap-1.5 text-sand/70">
+                    <span>•</span>
+                    <i class="fa-regular fa-clock text-gold-400"></i>
+                    <span>Atendimento a partir das 07:00</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto">
+                <span class="inline-flex items-center gap-1 text-gold-300 font-medium" title="Espaço com acessibilidade">
+                    <i class="fa-solid fa-wheelchair text-sky-400"></i>
+                    <span class="hidden xs:inline">Espaço Acessível</span>
+                </span>
+                <a href="https://www.instagram.com/studiodetalhes/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors inline-flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-gold-400"></i>
+                    <span>@studiodetalhes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HEADER FIXO COM GLASSMORPHISM -->
+    <header id="main-header" class="sticky top-0 z-40 backdrop-blur-md bg-espresso-900/85 border-b border-gold-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logotipo Tipográfico inspirado no Banner da Fachada ("FM Fernanda Marin Beauty") -->
+            <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-espresso-800 to-espresso-950 border border-gold-500/40 flex items-center justify-center shadow-gold-sm group-hover:border-gold-400 transition-all">
+                    <span class="font-script text-3xl text-gold-gradient leading-none pt-1 pr-0.5 select-none">Fm</span>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex items-center gap-2">
+                        <span class="text-[11px] uppercase tracking-[0.25em] text-gold-400 font-medium">Fernanda Marin</span>
+                        <span class="font-serif italic text-gold-300 text-sm">Beauty</span>
+                    </div>
+                    <span class="font-serif text-xl sm:text-2xl font-semibold tracking-wide text-champagne leading-tight">
+                        Stúdio Detalhes
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-sand">
+                <a href="#inicio" class="hover:text-gold-400 transition-colors">Início</a>
+                <a href="#servicos" class="hover:text-gold-400 transition-colors">Serviços</a>
+                <a href="#agendamento-rapido" class="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+                    Montar Agendamento
+                </a>
+                <a href="#especialista" class="hover:text-gold-400 transition-colors">A Especialista</a>
+                <a href="#avaliacoes" class="hover:text-gold-400 transition-colors">Avaliações</a>
+                <a href="#localizacao" class="hover:text-gold-400 transition-colors">Localização</a>
+            </nav>
+
+            <!-- Botão CTA no Header -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20do%20St%C3%BAdio%20Detalhes%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-gold-gradient text-espresso-950 font-semibold text-sm px-5 py-2.5 rounded-full shadow-gold-sm hover:shadow-gold-glow transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Agendar Agora</span>
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="mobile-menu-btn" aria-label="Abrir Menu" class="md:hidden w-11 h-11 rounded-xl bg-espresso-800 border border-gold-500/30 text-gold-400 flex items-center justify-center focus:outline-none">
+                <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Expansível -->
+        <div id="mobile-menu" class="hidden md:hidden bg-espresso-900/98 border-b border-gold-500/20 px-4 pt-3 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-espresso-800 text-champagne font-medium">Início</a>
+            <a href="#servicos" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-espresso-800 text-champagne font-medium">Catálogo de Serviços</a>
+            <a href="#agendamento-rapido" class="mobile-nav-link block py-2.5 px-3 rounded-xl bg-gold-500/10 border border-gold-500/30 text-gold-300 font-semibold">
+                <i class="fa-regular fa-calendar-check mr-2"></i>Montar Agendamento Rápido
+            </a>
+            <a href="#especialista" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-espresso-800 text-champagne font-medium">Fernanda Marin</a>
+            <a href="#avaliacoes" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-espresso-800 text-champagne font-medium">Avaliações (4,8 ★)</a>
+            <a href="#localizacao" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-espresso-800 text-champagne font-medium">Endereço & Contato</a>
+            <div class="pt-2">
+                <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20St%C3%BAdio%20Detalhes."
+                   target="_blank" rel="noopener noreferrer"
+                   class="w-full bg-gold-gradient text-espresso-950 font-bold py-3 px-4 rounded-xl shadow-gold-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chamar no WhatsApp (67) 99696-5770</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION IMPACTANTE -->
+    <section id="inicio" class="relative pt-8 pb-20 lg:pt-16 lg:pb-28 radial-spotlight luxury-pattern overflow-hidden">
+        <!-- Ornamento decorativo de fundo -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-gold-400/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                
+                <!-- Coluna de Texto (7 colunas) -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <!-- Selo de Autoridade Google Maps -->
+                    <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-espresso-800/90 border border-gold-500/35 shadow-gold-sm">
+                        <div class="flex items-center text-amber-400 text-xs gap-0.5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-xs sm:text-sm font-semibold text-champagne">4,8 no Google Maps</span>
+                        <span class="text-xs text-sand/70">(14 avaliações)</span>
+                        <span class="text-gold-500">•</span>
+                        <span class="text-xs text-gold-300 font-medium">Vicentina, MS</span>
+                    </div>
+
+                    <!-- Título Principal -->
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne leading-[1.12] tracking-tight">
+                        A beleza mora nos <span class="text-gold-gradient italic font-normal">detalhes</span> que realçam a sua essência.
+                    </h1>
+
+                    <!-- Subtítulo descritivo -->
+                    <p class="text-base sm:text-lg text-sand/90 max-w-2xl leading-relaxed font-light">
+                        No <strong class="text-champagne font-medium">Stúdio Detalhes Fernanda</strong> (Fernanda Marin Beauty), cada atendimento é pensado de forma exclusiva. Do loiro iluminado perfeito à produção impecável para o seu grande dia, cuidamos de você com técnica apurada, produtos selecionados e acolhimento.
+                    </p>
+
+                    <!-- Destaques rápidos em pílulas com SVGs dourados garantidos -->
+                    <div class="flex flex-wrap gap-2.5 pt-1">
+                        <span class="px-3.5 py-1.5 rounded-full bg-espresso-800/80 border border-gold-500/20 text-xs text-sand flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gold-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L14.4 8.6L21 11L14.4 13.4L12 20L9.6 13.4L3 11L9.6 8.6L12 2Z"/>
+                            </svg>
+                            <span>Mechas & Colorimetria</span>
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-espresso-800/80 border border-gold-500/20 text-xs text-sand flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                            </svg>
+                            <span>Corte, Escova & Selagem</span>
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-espresso-800/80 border border-gold-500/20 text-xs text-sand flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gold-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5ZM19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z"/>
+                            </svg>
+                            <span>Penteados & Maquiagem</span>
+                        </span>
+                    </div>
+
+                    <!-- Botões de Ação (CTAs) -->
+                    <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20do%20St%C3%BAdio%20Detalhes%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                           target="_blank" rel="noopener noreferrer"
+                           class="bg-gold-gradient text-espresso-950 font-bold text-base px-7 py-4 rounded-2xl shadow-gold-glow hover:scale-[1.02] transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Agendar pelo WhatsApp</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#servicos"
+                           class="bg-espresso-800/90 hover:bg-espresso-700 text-champagne border border-gold-500/35 font-medium text-base px-7 py-4 rounded-2xl transition-all flex items-center justify-center gap-2.5">
+                            <span>Conhecer Serviços</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-gold-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Informações de Confiança Abaixo dos Botões -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-gold-500/15 max-w-xl">
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">4,8 ★</p>
+                            <p class="text-xs text-sand/75">Excelência no Google</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">07:00h</p>
+                            <p class="text-xs text-sand/75">Abertura com hora marcada</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-400 flex items-center gap-1.5">
+                                <span>100%</span>
+                                <i class="fa-solid fa-wheelchair text-sky-400 text-base" title="Espaço com acessibilidade"></i>
+                            </p>
+                            <p class="text-xs text-sand/75">Espaço acessível e acolhedor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Visual Refinada (5 colunas) - Inspirada na Arte Oficial da Fachada -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Moldura Dourada Decorativa Traseira -->
+                        <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-b from-gold-400/25 via-gold-500/5 to-gold-500/25 blur-md"></div>
+
+                        <!-- Card Principal inspirado no Banner Oficial Fernanda Marin Beauty -->
+                        <div class="relative rounded-[1.85rem] bg-espresso-800 border-2 border-gold-500/40 overflow-hidden shadow-card-dark">
+                            <!-- Cabeçalho Assinatura FM -->
+                            <div class="p-6 pb-4 bg-gradient-to-b from-espresso-950 via-espresso-900 to-espresso-800 relative">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-end gap-2">
+                                        <span class="font-script text-5xl text-gold-gradient leading-none">Fm</span>
+                                        <div class="pb-1">
+                                            <p class="text-[10px] tracking-[0.28em] uppercase text-gold-300 font-semibold">Fernanda Marin</p>
+                                            <p class="font-serif text-2xl text-gold-400 italic leading-none mt-0.5">Beauty</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 rounded-full bg-gold-500/15 border border-gold-400/30 text-[11px] text-gold-300 font-medium">
+                                        Vicentina • MS
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Imagem Editorial de Beleza + Curva Dourada inspirada na porta do Stúdio -->
+                            <div class="relative h-80 sm:h-96 overflow-hidden bg-espresso-900">
+                                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=85" 
+                                     alt="Cabelos iluminados e produção de beleza no Stúdio Detalhes Fernanda"
+                                     onerror="this.src='https://placehold.co/700x850/1E1917/D4AF37?text=Fernanda+Marin+Beauty'"
+                                     class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition-transform duration-700">
+                                
+                                <!-- Overlay em curva diagonal igual ao design do banner oficial -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-espresso-950 via-espresso-950/60 to-transparent"></div>
+
+                                <!-- Lista de Especialidades em Dourado (Fiel ao Banner da Porta) -->
+                                <div class="absolute bottom-4 right-5 text-right space-y-1">
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Corte</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Escova</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Penteados</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Selagem</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Maquiagem</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Colorimetria</p>
+                                    <p class="font-serif text-lg sm:text-xl font-semibold text-gold-300 tracking-wide drop-shadow">Mechas</p>
+                                </div>
+
+                                <!-- Contato Direto no Canto Inferior Esquerdo do Card -->
+                                <div class="absolute bottom-4 left-5">
+                                    <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." 
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-2 bg-espresso-900/90 backdrop-blur-md border border-gold-400/50 rounded-xl px-3.5 py-2 hover:border-gold-300 transition-all">
+                                        <i class="fa-brands fa-whatsapp text-gold-400 text-lg"></i>
+                                        <div>
+                                            <p class="text-xs font-bold text-gold-300 leading-none">(67) 99696-5770</p>
+                                            <p class="text-[10px] text-sand/80 mt-0.5">@studiodetalhes</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Barra Inferior do Card -->
+                            <div class="px-5 py-3.5 bg-espresso-950 border-t border-gold-500/20 flex items-center justify-between text-xs">
+                                <span class="text-sand flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle text-[7px] text-emerald-400"></i>
+                                    Agendamento personalizado via WhatsApp
+                                </span>
+                                <a href="#agendamento-rapido" class="text-gold-400 hover:text-gold-300 font-semibold underline underline-offset-4">
+                                    Simular combo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAIXA DE DIFERENCIAIS COM ÍCONES SVG DOURADOS (SEM FOTOS) -->
+    <section class="bg-espresso-800/70 border-y border-gold-500/20 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Colorimetria & Mechas -->
+                <div class="flex items-center gap-4 p-4 rounded-2xl bg-espresso-900/80 border border-gold-500/20 hover:border-gold-400/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-[#2A231B] border border-[#D4AF37]/40 flex items-center justify-center shrink-0 shadow-gold-sm">
+                        <svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L14.2 8.2L20.5 10.5L14.2 12.8L12 19L9.8 12.8L3.5 10.5L9.8 8.2L12 2Z" fill="currentColor" fill-opacity="0.2"/>
+                            <path d="M12 2L14.2 8.2L20.5 10.5L14.2 12.8L12 19L9.8 12.8L3.5 10.5L9.8 8.2L12 2Z"/>
+                            <path d="M19 16L19.8 18.2L22 19L19.8 19.8L19 22L18.2 19.8L16 19L18.2 18.2L19 16Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-semibold text-champagne">Colorimetria & Mechas</h3>
+                        <p class="text-xs text-sand/80">Tons personalizados preservando a saúde do fio</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Penteados & Make -->
+                <div class="flex items-center gap-4 p-4 rounded-2xl bg-espresso-900/80 border border-gold-500/20 hover:border-gold-400/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-[#2A231B] border border-[#D4AF37]/40 flex items-center justify-center shrink-0 shadow-gold-sm">
+                        <svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 16L2.5 6L8.5 10.5L12 4L15.5 10.5L21.5 6L20 16H4Z" fill="currentColor" fill-opacity="0.18"/>
+                            <path d="M4 16L2.5 6L8.5 10.5L12 4L15.5 10.5L21.5 6L20 16H4Z"/>
+                            <path d="M4 19.5H20"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-semibold text-champagne">Penteados & Make</h3>
+                        <p class="text-xs text-sand/80">Produção completa para festas, noivas e eventos</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Alinhamento & Corte -->
+                <div class="flex items-center gap-4 p-4 rounded-2xl bg-espresso-900/80 border border-gold-500/20 hover:border-gold-400/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-[#2A231B] border border-[#D4AF37]/40 flex items-center justify-center shrink-0 shadow-gold-sm">
+                        <svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="6" r="3" fill="currentColor" fill-opacity="0.18"/>
+                            <circle cx="6" cy="18" r="3" fill="currentColor" fill-opacity="0.18"/>
+                            <circle cx="6" cy="6" r="3"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                            <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                            <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-semibold text-champagne">Alinhamento & Corte</h3>
+                        <p class="text-xs text-sand/80">Selagem, escova e cortes que valorizam seu rosto</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Atendimento Exclusivo -->
+                <div class="flex items-center gap-4 p-4 rounded-2xl bg-espresso-900/80 border border-gold-500/20 hover:border-gold-400/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-[#2A231B] border border-[#D4AF37]/40 flex items-center justify-center shrink-0 shadow-gold-sm">
+                        <svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 3H18L22 9L12 21L2 9L6 3Z" fill="currentColor" fill-opacity="0.18"/>
+                            <path d="M6 3H18L22 9L12 21L2 9L6 3Z"/>
+                            <path d="M2 9H22"/>
+                            <path d="M12 3L8 9L12 21L16 9L12 3Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-semibold text-champagne">Atendimento Exclusivo</h3>
+                        <p class="text-xs text-sand/80">Ambiente acolhedor e acessível em Vicentina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GRADE DE SERVIÇOS INTERATIVA COM FILTRO -->
+    <section id="servicos" class="py-20 lg:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold-400 font-semibold block">
+                    Nossas Especialidades Oficiais
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-champagne">
+                    Menu de Serviços <span class="text-gold-gradient italic font-normal">Fernanda Marin</span>
+                </h2>
+                <p class="text-sand/85 text-sm sm:text-base">
+                    Conheça os 7 procedimentos especializados oferecidos no Stúdio Detalhes. Filtre por categoria ou clique para agendar diretamente pelo WhatsApp.
+                </p>
+            </div>
+
+            <!-- Botões de Filtro por Categoria -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 mt-10" id="service-filters">
+                <button data-filter="todos" class="filter-btn active-filter px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-gold-gradient text-espresso-950 shadow-gold-sm">
+                    Todos (7)
+                </button>
+                <button data-filter="cabelos" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-espresso-800 text-sand hover:text-gold-300 border border-gold-500/25">
+                    Cabelos & Corte
+                </button>
+                <button data-filter="cor" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-espresso-800 text-sand hover:text-gold-300 border border-gold-500/25">
+                    Cor & Iluminação
+                </button>
+                <button data-filter="alinhamento" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-espresso-800 text-sand hover:text-gold-300 border border-gold-500/25">
+                    Alinhamento
+                </button>
+                <button data-filter="eventos" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-espresso-800 text-sand hover:text-gold-300 border border-gold-500/25">
+                    Produção & Festa
+                </button>
+            </div>
+
+            <!-- Grade de Cards de Serviços (Renderizada via JS para interatividade total) -->
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <!-- Preenchido dinamicamente pelo script abaixo -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. MONTADOR DE AGENDAMENTO RÁPIDO (SELETOR INTERATIVO DE ALTA CONVERSÃO) -->
+    <section id="agendamento-rapido" class="py-20 bg-espresso-800/60 border-y border-gold-500/25 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="px-3.5 py-1 rounded-full bg-gold-500/15 border border-gold-400/30 text-gold-300 text-xs uppercase tracking-widest font-semibold inline-block">
+                    Prático & Personalizado
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-champagne">
+                    Montador de <span class="text-gold-gradient italic font-normal">Agendamento Rápido</span>
+                </h2>
+                <p class="text-sand/85 text-sm sm:text-base">
+                    Selecione um ou mais procedimentos abaixo (ex: <em>Mechas + Corte + Escova</em> ou <em>Penteados + Maquiagem</em>), informe seu nome e período preferido e envie sua solicitação pronta direto para o WhatsApp da Fernanda!
+                </p>
+            </div>
+
+            <!-- Atalhos de Combos Favoritos -->
+            <div class="mb-8 flex flex-wrap items-center justify-center gap-2.5">
+                <span class="text-xs text-sand/75 mr-1"><i class="fa-solid fa-bolt text-gold-400 mr-1"></i>Combos rápidos:</span>
+                <button type="button" onclick="selectPresetCombo(['Mechas', 'Corte', 'Escova'])" class="text-xs px-3.5 py-1.5 rounded-full bg-espresso-900 hover:bg-gold-500/20 border border-gold-500/30 text-gold-300 transition-all">
+                    ✨ Mechas + Tratamento + Escova
+                </button>
+                <button type="button" onclick="selectPresetCombo(['Penteados', 'Maquiagem'])" class="text-xs px-3.5 py-1.5 rounded-full bg-espresso-900 hover:bg-gold-500/20 border border-gold-500/30 text-gold-300 transition-all">
+                    👑 Penteado + Maquiagem
+                </button>
+                <button type="button" onclick="selectPresetCombo(['Selagem', 'Corte'])" class="text-xs px-3.5 py-1.5 rounded-full bg-espresso-900 hover:bg-gold-500/20 border border-gold-500/30 text-gold-300 transition-all">
+                    💎 Selagem + Corte
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Passo 1: Seleção dos Procedimentos (7 Colunas) -->
+                <div class="lg:col-span-7 bg-espresso-900 p-6 sm:p-8 rounded-3xl gold-border shadow-card-dark">
+                    <div class="flex items-center justify-between mb-5">
+                        <h3 class="font-serif text-2xl font-semibold text-champagne flex items-center gap-2.5">
+                            <span class="w-7 h-7 rounded-full bg-gold-gradient text-espresso-950 font-sans text-xs font-bold flex items-center justify-center">1</span>
+                            Escolha os Procedimentos
+                        </h3>
+                        <button type="button" onclick="clearSelectedServices()" class="text-xs text-sand/70 hover:text-gold-400 underline">
+                            Limpar seleção
+                        </button>
+                    </div>
+
+                    <!-- Checkboxes Interativos dos 7 Serviços -->
+                    <div id="builder-services-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- Gerado dinamicamente via JS -->
+                    </div>
+                </div>
+
+                <!-- Passo 2: Dados + Resumo e Envio WhatsApp (5 Colunas) -->
+                <div class="lg:col-span-5 bg-espresso-900 p-6 sm:p-8 rounded-3xl border-2 border-gold-500/40 shadow-gold-sm space-y-5">
+                    <h3 class="font-serif text-2xl font-semibold text-champagne flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-full bg-gold-gradient text-espresso-950 font-sans text-xs font-bold flex items-center justify-center">2</span>
+                        Seus Dados e Preferência
+                    </h3>
+
+                    <!-- Nome da Cliente -->
+                    <div>
+                        <label for="client-name" class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-2">
+                            Seu Nome
+                        </label>
+                        <div class="relative">
+                            <i class="fa-regular fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gold-400/70 text-sm"></i>
+                            <input type="text" id="client-name" placeholder="Ex: Maria Silva" 
+                                   class="w-full bg-espresso-800 border border-gold-500/30 focus:border-gold-400 rounded-xl pl-10 pr-4 py-3 text-sm text-champagne placeholder-sand/40 focus:outline-none transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Escolha do Período -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-2">
+                            Período de Preferência
+                        </label>
+                        <div class="grid grid-cols-3 gap-2.5" id="shift-selector">
+                            <button type="button" data-shift="Manhã (a partir das 07:00)" class="shift-btn active-shift py-2.5 px-3 rounded-xl border border-gold-400 bg-gold-500/20 text-gold-300 text-xs font-semibold text-center transition-all">
+                                <i class="fa-regular fa-sun block text-base mb-1"></i>
+                                Manhã (07h+)
+                            </button>
+                            <button type="button" data-shift="Tarde" class="shift-btn py-2.5 px-3 rounded-xl border border-gold-500/25 bg-espresso-800 text-sand text-xs font-medium text-center hover:border-gold-400/50 transition-all">
+                                <i class="fa-solid fa-cloud-sun block text-base mb-1"></i>
+                                Tarde
+                            </button>
+                            <button type="button" data-shift="Horário Flexível" class="shift-btn py-2.5 px-3 rounded-xl border border-gold-500/25 bg-espresso-800 text-sand text-xs font-medium text-center hover:border-gold-400/50 transition-all">
+                                <i class="fa-regular fa-calendar-check block text-base mb-1"></i>
+                                Flexível
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Observação Opcional (Dia da semana ou evento) -->
+                    <div>
+                        <label for="client-notes" class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-2">
+                            Dia desejado ou observação (opcional)
+                        </label>
+                        <input type="text" id="client-notes" placeholder="Ex: Para este sábado / Casamento / Quero avaliar tom" 
+                               class="w-full bg-espresso-800 border border-gold-500/30 focus:border-gold-400 rounded-xl px-4 py-2.5 text-sm text-champagne placeholder-sand/40 focus:outline-none transition-colors">
+                    </div>
+
+                    <!-- Prévia da Mensagem Gerada -->
+                    <div class="p-4 rounded-2xl bg-espresso-950/90 border border-gold-500/20 space-y-2">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gold-400 font-semibold flex items-center gap-1.5">
+                                <i class="fa-brands fa-whatsapp"></i> Prévia da mensagem:
+                            </span>
+                            <span id="selected-count-badge" class="px-2 py-0.5 rounded-full bg-gold-500/20 text-gold-300 text-[11px] font-semibold">
+                                0 selecionados
+                            </span>
+                        </div>
+                        <p id="whatsapp-preview-text" class="text-xs text-sand/90 italic leading-relaxed break-words">
+                            Selecione os procedimentos ao lado para visualizar sua mensagem personalizada...
+                        </p>
+                    </div>
+
+                    <!-- Botão Principal de Disparo para o WhatsApp -->
+                    <button type="button" id="send-booking-whatsapp"
+                            class="w-full bg-gold-gradient text-espresso-950 font-bold py-4 px-6 rounded-2xl shadow-gold-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2.5 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Enviar Agendamento no WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO SOBRE A ESPECIALISTA (FERNANDA MARIN) -->
+    <section id="especialista" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Moldura Artística da Especialista (5 Colunas) -->
+                <div class="lg:col-span-5">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-4 -left-4 w-full h-full rounded-3xl border border-gold-500/40 pointer-events-none"></div>
+                        <div class="relative rounded-3xl overflow-hidden bg-espresso-800 border border-gold-500/30 shadow-card-dark">
+                            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85" 
+                                 alt="Espaço e cuidado nos detalhes - Stúdio Detalhes Fernanda Marin"
+                                 onerror="this.src='https://placehold.co/600x720/1E1917/D4AF37?text=Fernanda+Marin'"
+                                 class="w-full h-[420px] object-cover">
+                            <div class="p-6 bg-gradient-to-t from-espresso-950 via-espresso-900 to-espresso-900/95">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-script text-3xl text-gold-400 leading-none">Fernanda Marin</p>
+                                        <p class="font-serif text-xl font-semibold text-champagne mt-1">Fundadora & Especialista em Beleza</p>
+                                        <p class="text-xs text-sand/75 mt-0.5">Stúdio Detalhes Fernanda • Vicentina, MS</p>
+                                    </div>
+                                    <a href="https://www.instagram.com/studiodetalhes/" target="_blank" rel="noopener noreferrer"
+                                       aria-label="Instagram @studiodetalhes"
+                                       class="w-11 h-11 rounded-2xl bg-gold-500/15 border border-gold-400/40 flex items-center justify-center text-gold-300 hover:bg-gold-500 hover:text-espresso-950 transition-all">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo Sobre a Especialista (7 Colunas) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold-400 font-semibold block">
+                        Sobre a Especialista & Nosso Espaço
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-champagne leading-tight">
+                        Dedicação apaixonada por <span class="text-gold-gradient italic font-normal">realçar quem você é</span>.
+                    </h2>
+                    <p class="text-sand/90 leading-relaxed text-base">
+                        À frente do <strong class="text-champagne">Stúdio Detalhes Fernanda (Fernanda Marin Beauty)</strong>, Fernanda Marin construiu em Vicentina, MS uma referência em cuidado capilar e maquiagem profissional, reconhecida com <strong class="text-gold-300">nota 4,8 estrelas no Google</strong> pelas clientes.
+                    </p>
+                    <p class="text-sand/85 leading-relaxed text-base">
+                        Nosso compromisso vai além de transformar o visual: entregamos um momento de pausa, autoestima e bem-estar. Desde o diagnóstico de colorimetria e teste de mechas até a escolha dos produtos de tratamento térmico e fixação de maquiagem, cada etapa respeita a individualidade dos seus fios e da sua pele.
+                    </p>
+
+                    <!-- Pilares do Stúdio -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-espresso-800/90 border border-gold-500/20 flex items-start gap-3.5">
+                            <i class="fa-solid fa-gem text-gold-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-serif text-lg font-semibold text-champagne">Produtos Selecionados</h4>
+                                <p class="text-xs text-sand/80 mt-0.5">Linhas profissionais de alta performance para brilho espelhado, durabilidade e proteção da fibra capilar.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-espresso-800/90 border border-gold-500/20 flex items-start gap-3.5">
+                            <i class="fa-solid fa-magnifying-glass-plus text-gold-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-serif text-lg font-semibold text-champagne">Cuidado nos Detalhes</h4>
+                                <p class="text-xs text-sand/80 mt-0.5">Visagismo e estudo personalizado de tom para que seu corte, cor ou maquiagem harmonizem com você.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-espresso-800/90 border border-gold-500/20 flex items-start gap-3.5">
+                            <i class="fa-solid fa-wheelchair text-sky-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-serif text-lg font-semibold text-champagne">Ambiente Acessível</h4>
+                                <p class="text-xs text-sand/80 mt-0.5">Espaço térreo planejado com acessibilidade e conforto para receber todas as clientes com carinho.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-espresso-800/90 border border-gold-500/20 flex items-start gap-3.5">
+                            <i class="fa-solid fa-heart text-gold-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-serif text-lg font-semibold text-champagne">Pontualidade & Acolhimento</h4>
+                                <p class="text-xs text-sand/80 mt-0.5">Atendimento com hora marcada a partir das 07:00 da manhã para sua total comodidade.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão para o Instagram Oficial -->
+                    <div class="pt-2">
+                        <a href="https://www.instagram.com/studiodetalhes/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-espresso-800 hover:bg-espresso-700 border border-gold-500/35 text-champagne font-semibold text-sm transition-all shadow-gold-sm">
+                            <i class="fa-brands fa-instagram text-gold-400 text-xl"></i>
+                            <span>Acompanhe nossos trabalhos em <strong>@studiodetalhes</strong></span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gold-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL / AVALIAÇÕES DO GOOGLE MAPS (4,8 ESTRELAS) -->
+    <section id="avaliacoes" class="py-20 bg-espresso-800/50 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold-400 font-semibold block mb-2">
+                        Reconhecimento Real em Vicentina, MS
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-champagne">
+                        O carinho de quem confia no <span class="text-gold-gradient italic font-normal">Stúdio Detalhes</span>
+                    </h2>
+                </div>
+                <!-- Card Resumo Oficial do Google -->
+                <div class="px-6 py-4 rounded-2xl bg-espresso-900 border border-gold-500/35 flex items-center gap-4 shrink-0">
+                    <div class="text-center">
+                        <span class="font-serif text-4xl font-bold text-gold-400 leading-none">4,8</span>
+                        <div class="flex items-center text-amber-400 text-xs mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="border-l border-gold-500/20 pl-4">
+                        <p class="text-sm font-semibold text-champagne flex items-center gap-1.5">
+                            <i class="fa-brands fa-google text-gold-400"></i> Google Maps
+                        </p>
+                        <p class="text-xs text-sand/75">Baseado em 14 avaliações verificadas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Depoimento 1 -->
+                <div class="p-6 rounded-3xl bg-espresso-900 gold-border flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-sand/60">Corte + Mechas</span>
+                        </div>
+                        <p class="text-sm text-sand/90 italic leading-relaxed">
+                            "Atendimento impecável do início ao fim! A Fernanda acertou exatamente o tom de mechas que eu sonhava sem ressecar meu cabelo. O nome Stúdio Detalhes faz todo sentido!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gold-500/15">
+                        <div class="w-9 h-9 rounded-full bg-gold-500/20 text-gold-300 font-serif font-bold flex items-center justify-center">
+                            C
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-champagne">Cliente Verificada</p>
+                            <p class="text-[11px] text-sand/60">Vicentina, MS • Avaliação 5★</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="p-6 rounded-3xl bg-espresso-900 gold-border flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-sand/60">Penteado + Maquiagem</span>
+                        </div>
+                        <p class="text-sm text-sand/90 italic leading-relaxed">
+                            "Fiz minha produção de festa com penteado e maquiagem e durou a noite inteira intacta. Além de super profissional, o ambiente é acolhedor e ela atende super cedo quando precisamos."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gold-500/15">
+                        <div class="w-9 h-9 rounded-full bg-gold-500/20 text-gold-300 font-serif font-bold flex items-center justify-center">
+                            A
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-champagne">Cliente Verificada</p>
+                            <p class="text-[11px] text-sand/60">Vicentina, MS • Avaliação 5★</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="p-6 rounded-3xl bg-espresso-900 gold-border flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-sand/60">Selagem + Escova</span>
+                        </div>
+                        <p class="text-sm text-sand/90 italic leading-relaxed">
+                            "Minha selagem deixou o cabelo com um brilho espelhado incrível e zero frizz. Produtos maravilhosos e um cuidado único com cada cliente. Recomendo de olhos fechados!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gold-500/15">
+                        <div class="w-9 h-9 rounded-full bg-gold-500/20 text-gold-300 font-serif font-bold flex items-center justify-center">
+                            J
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-champagne">Cliente Verificada</p>
+                            <p class="text-[11px] text-sand/60">Vicentina, MS • Avaliação 5★</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SEÇÃO DE LOCALIZAÇÃO E CONTATO -->
+    <section id="localizacao" class="py-20 lg:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold-400 font-semibold block">
+                    Visite o Stúdio Detalhes Fernanda
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-champagne">
+                    Localização & <span class="text-gold-gradient italic font-normal">Canais de Atendimento</span>
+                </h2>
+                <p class="text-sand/85 text-sm sm:text-base">
+                    Estamos esperando por você em Vicentina, MS com estrutura confortável e acessível.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Card de Endereço Completo e Contatos (6 Colunas) -->
+                <div class="lg:col-span-6 bg-espresso-800/90 rounded-3xl p-6 sm:p-8 gold-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-gold-500/20 pb-5">
+                            <div>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-champagne">Stúdio Detalhes Fernanda</h3>
+                                <p class="text-xs text-gold-400 uppercase tracking-widest mt-0.5">Fernanda Marin Beauty • Salão de Beleza</p>
+                            </div>
+                            <span class="w-11 h-11 rounded-2xl bg-sky-500/15 border border-sky-400/30 text-sky-400 flex items-center justify-center shrink-0" title="Espaço com acessibilidade">
+                                <i class="fa-solid fa-wheelchair text-xl"></i>
+                            </span>
+                        </div>
+
+                        <!-- Endereço Oficial -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs uppercase tracking-wider text-gold-300 font-semibold">Endereço</p>
+                                <p class="text-base font-medium text-champagne mt-0.5">R. Projetada A2 - Vicentina, MS, 79710-000</p>
+                                <p class="text-xs text-sand/75 mt-1 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-plus text-gold-400"></i>
+                                    <span>Plus Code: <strong>HHQG+H4 Vicentina, Mato Grosso do Sul</strong></span>
+                                </p>
+                                <button type="button" onclick="copyAddress()" class="mt-2 text-xs text-gold-400 hover:text-gold-300 inline-flex items-center gap-1.5 underline underline-offset-4">
+                                    <i class="fa-regular fa-copy"></i> Copiar endereço completo
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Horário de Atendimento -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                <i class="fa-regular fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-gold-300 font-semibold">Horário de Atendimento</p>
+                                <p class="text-base font-medium text-champagne mt-0.5">Atendimento a partir das 07:00</p>
+                                <p class="text-xs text-sand/75 mt-0.5">Mediante agendamento prévio via WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp / Telefone -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-gold-300 font-semibold">WhatsApp & Telefone</p>
+                                <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20St%C3%BAdio%20Detalhes." 
+                                   target="_blank" rel="noopener noreferrer"
+                                   class="text-lg font-bold text-champagne hover:text-gold-400 transition-colors mt-0.5 block">
+                                    (67) 99696-5770
+                                </a>
+                                <p class="text-xs text-sand/75">Clique para iniciar conversa imediata</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação de Localização e Redes -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-gold-500/20">
+                        <a href="https://www.google.com/maps/search/?api=1&query=St%C3%BAdio+Detalhes+Fernanda+R.+Projetada+A2+Vicentina+MS+79710-000" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="bg-gold-gradient text-espresso-950 font-bold text-sm py-3.5 px-5 rounded-2xl shadow-gold-sm hover:shadow-gold-glow transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-diamond-turn-right text-base"></i>
+                            <span>Traçar Rota no Google Maps</span>
+                        </a>
+                        <a href="https://www.instagram.com/studiodetalhes/" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="bg-espresso-900 hover:bg-espresso-700 text-champagne border border-gold-500/35 font-semibold text-sm py-3.5 px-5 rounded-2xl transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-instagram text-gold-400 text-lg"></i>
+                            <span>@studiodetalhes</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card da Direita: Quadro Visual do Google Street View com a Foto da Fachada da Casa + Alternador Mapa -->
+                <div class="lg:col-span-6 rounded-3xl overflow-hidden gold-border bg-espresso-900 flex flex-col justify-between shadow-card-dark">
+                    
+                    <!-- Barra de Topo do Quadro: Abas Street View (Fachada da Casa) vs Mapa Interativo -->
+                    <div class="px-4 py-3 bg-espresso-950 border-b border-gold-500/20 flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <button type="button" id="tab-btn-streetview" onclick="switchLocationView('streetview')"
+                                    class="px-3.5 py-1.5 rounded-xl bg-gold-gradient text-espresso-950 font-bold text-xs flex items-center gap-1.5 shadow-gold-sm transition-all">
+                                <i class="fa-solid fa-street-view"></i>
+                                <span>Fachada (Street View)</span>
+                            </button>
+                            <button type="button" id="tab-btn-map" onclick="switchLocationView('map')"
+                                    class="px-3.5 py-1.5 rounded-xl bg-espresso-800 hover:bg-espresso-700 text-sand border border-gold-500/25 font-medium text-xs flex items-center gap-1.5 transition-all">
+                                <i class="fa-solid fa-map-location-dot text-gold-400"></i>
+                                <span>Mapa Interativo</span>
+                            </button>
+                        </div>
+
+                        <!-- Botão para Carregar Foto Local da Fachada se o usuário desejar -->
+                        <div>
+                            <label for="facade-upload-input"
+                                   class="cursor-pointer px-3 py-1.5 rounded-xl bg-espresso-800 hover:bg-espresso-700 border border-gold-500/30 text-[11px] text-gold-300 font-medium inline-flex items-center gap-1.5 transition-all"
+                                   title="Carregar foto da fachada do seu dispositivo">
+                                <i class="fa-regular fa-image"></i>
+                                <span>Trocar foto</span>
+                            </label>
+                            <input id="facade-upload-input" type="file" accept="image/*" class="hidden" onchange="handleLocalFacadeImage(event)">
+                        </div>
+                    </div>
+
+                    <!-- VIEW 1: Foto Real da Fachada da Casa no Google Street View (R. Projetada A2 - Vicentina, MS) -->
+                    <div id="location-view-streetview" class="relative flex-1 min-h-[390px] sm:min-h-[430px] bg-[#181412] overflow-hidden group">
+                        
+                        <!-- Ilustração Arquitetônica Fiel da Fachada (Fundo Garantido caso haja bloqueio de rede) -->
+                        <svg class="absolute inset-0 w-full h-full object-cover" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#3B82F6"/>
+                                    <stop offset="65%" stop-color="#93C5FD"/>
+                                    <stop offset="100%" stop-color="#DBEAFE"/>
+                                </linearGradient>
+                                <linearGradient id="sidewalkGrad" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#C88A70"/>
+                                    <stop offset="50%" stop-color="#B06D53"/>
+                                    <stop offset="100%" stop-color="#8C523C"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="360" fill="url(#skyGrad)"/>
+                            <path d="M0 110 Q 400 135 800 95" stroke="#1E293B" stroke-opacity="0.25" stroke-width="1"/>
+                            <path d="M0 122 Q 400 148 800 108" stroke="#1E293B" stroke-opacity="0.2" stroke-width="1"/>
+                            <rect x="615" y="130" width="185" height="220" fill="#7D8287"/>
+                            <rect x="615" y="130" width="185" height="8" fill="#5B6065"/>
+                            <polygon points="485,35 538,85 538,360 485,360" fill="#C49A80"/>
+                            <rect x="415" y="35" width="72" height="325" fill="#8C9094"/>
+                            <rect x="280" y="95" width="138" height="265" fill="#7F8387"/>
+                            <path d="M280 95 L415 80 L415 92 L280 107 Z" fill="#CBD5E1"/>
+                            <rect x="330" y="128" width="52" height="75" fill="#334155"/>
+                            <rect x="334" y="132" width="20" height="68" fill="#64748B" fill-opacity="0.55"/>
+                            <rect x="292" y="160" width="122" height="45" stroke="#1E1917" stroke-width="2" fill="none"/>
+                            <line x1="302" y1="160" x2="302" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="312" y1="160" x2="312" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="322" y1="160" x2="322" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="332" y1="160" x2="332" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="342" y1="160" x2="342" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="352" y1="160" x2="352" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="362" y1="160" x2="362" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="372" y1="160" x2="372" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="382" y1="160" x2="382" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="392" y1="160" x2="392" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <line x1="402" y1="160" x2="402" y2="205" stroke="#1E1917" stroke-width="1.5"/>
+                            <rect x="298" y="255" width="38" height="44" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
+                            <!-- Porta Oficial com o Banner Preto & Dourado -->
+                            <rect x="356" y="248" width="44" height="106" fill="#141110" stroke="#D4AF37" stroke-width="1.8"/>
+                            <text x="363" y="263" fill="#D4AF37" font-size="11" font-family="serif" font-style="italic">Fm</text>
+                            <text x="374" y="268" fill="#E6C665" font-size="6.5" font-family="serif">Beauty</text>
+                            <circle cx="378" cy="285" r="9" fill="#CBD5E1"/>
+                            <path d="M366 312 Q378 296 390 312" fill="#94A3B8"/>
+                            <line x1="382" y1="316" x2="396" y2="316" stroke="#D4AF37" stroke-width="1.5"/>
+                            <line x1="382" y1="321" x2="396" y2="321" stroke="#D4AF37" stroke-width="1.5"/>
+                            <line x1="382" y1="326" x2="396" y2="326" stroke="#D4AF37" stroke-width="1.5"/>
+                            <line x1="382" y1="331" x2="396" y2="331" stroke="#D4AF37" stroke-width="1.5"/>
+                            <line x1="362" y1="340" x2="380" y2="340" stroke="#E6C665" stroke-width="1.8"/>
+                            <rect x="415" y="250" width="54" height="72" fill="#5D4037" stroke="#A1887F" stroke-width="2"/>
+                            <rect x="418" y="253" width="24" height="66" fill="#8D6E63"/>
+                            <rect x="444" y="253" width="22" height="66" fill="#795548"/>
+                            <rect x="498" y="232" width="195" height="128" fill="#6D4C41" stroke="#4E342E" stroke-width="5"/>
+                            <path d="M505 260 L685 260 M505 280 L685 280 M505 300 L685 300 M505 320 L685 320 M505 340 L685 340" stroke="#4E342E" stroke-width="3"/>
+                            <path d="M530 250 L515 355 M565 250 L550 355 M600 250 L585 355 M635 250 L620 355 M670 250 L655 355" stroke="#8D6E63" stroke-width="4" stroke-opacity="0.6"/>
+                            <rect x="693" y="242" width="65" height="120" fill="#9A5B42"/>
+                            <rect x="758" y="250" width="42" height="112" fill="#6D4C41" stroke="#4E342E" stroke-width="4"/>
+                            <polygon points="0,350 800,355 800,520 0,520" fill="url(#sidewalkGrad)"/>
+                            <polygon points="0,350 280,355 210,520 0,520" fill="#475569"/>
+                            <line x1="280" y1="355" x2="210" y2="520" stroke="#CBD5E1" stroke-width="4"/>
+                            <rect x="195" y="250" width="22" height="110" fill="#4E342E"/>
+                            <circle cx="195" cy="180" r="85" fill="#2E5A27"/>
+                            <circle cx="245" cy="160" r="70" fill="#3B7A33"/>
+                            <circle cx="145" cy="195" r="65" fill="#366B2F"/>
+                            <circle cx="215" cy="215" r="65" fill="#4D8C42"/>
+                            <g transform="translate(105, 318)">
+                                <ellipse cx="75" cy="72" rx="72" ry="12" fill="#1E1917" fill-opacity="0.45"/>
+                                <path d="M18 42 L35 15 L105 15 L128 40 L142 45 L140 68 L10 68 L10 45 Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/>
+                                <polygon points="38,20 72,20 72,38 25,38" fill="#1E293B"/>
+                                <polygon points="77,20 103,20 118,38 77,38" fill="#1E293B"/>
+                                <circle cx="36" cy="68" r="14" fill="#1E293B"/>
+                                <circle cx="36" cy="68" r="7" fill="#94A3B8"/>
+                                <circle cx="112" cy="68" r="14" fill="#1E293B"/>
+                                <circle cx="112" cy="68" r="7" fill="#94A3B8"/>
+                                <rect x="128" y="44" width="10" height="8" rx="2" fill="#EF4444"/>
+                            </g>
+                        </svg>
+
+                        <!-- Foto Real da Fachada do Google Street View (panoid=IEu_SCPOEYvUNAdG1ITdhQ, yaw=80.8) -->
+                        <img id="streetview-facade-img"
+                             src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IEu_SCPOEYvUNAdG1ITdhQ&cb_client=search.gws-prod.gps&w=1200&h=700&yaw=80.8&pitch=0&fov=90"
+                             referrerpolicy="no-referrer"
+                             alt="Fachada da casa do Stúdio Detalhes Fernanda na R. Projetada A2 - Vicentina, MS (Google Street View)"
+                             class="relative z-10 w-full h-full min-h-[390px] sm:min-h-[430px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                             onerror="tryNextStreetViewSource(this)">
+
+                        <!-- Gradiente sutil nas bordas -->
+                        <div class="absolute inset-0 z-20 bg-gradient-to-t from-espresso-950/85 via-transparent to-espresso-950/25 pointer-events-none"></div>
+
+                        <!-- Selo Escuro Superior Esquerdo fiel ao Google Street View ("R. Projetada A2 - Mato Grosso do Sul - Google Street View - dez. de 2024") -->
+                        <div class="absolute top-4 left-4 z-30 bg-[#1F1F1F]/95 backdrop-blur-md border border-white/15 rounded-xl px-4 py-3 shadow-2xl max-w-[235px] text-white">
+                            <div class="flex items-start justify-between gap-3">
+                                <div>
+                                    <p class="text-xs font-bold leading-tight">R. Projetada A2</p>
+                                    <p class="text-[11px] text-gray-300 mt-0.5">Mato Grosso do Sul</p>
+                                </div>
+                                <i class="fa-solid fa-location-dot text-gray-300 text-xs mt-0.5"></i>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-white/15 flex items-center gap-1.5 text-[11px] text-gray-200">
+                                <span class="w-4 h-4 rounded-full bg-white text-[#4285F4] font-bold flex items-center justify-center text-[10px]">G</span>
+                                <span>Google Street View</span>
+                            </div>
+                            <p class="text-[10px] text-gray-400 mt-1">dez. de 2024</p>
+                        </div>
+
+                        <!-- Rodapé Sobreposto na Foto com Link Direto para o Street View 360° Real -->
+                        <div class="absolute bottom-4 left-4 right-4 z-30 p-3.5 sm:p-4 rounded-2xl bg-espresso-900/95 backdrop-blur-md border border-gold-500/40 shadow-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-[#2A231B] border border-[#D4AF37]/50 flex items-center justify-center shrink-0">
+                                    <span class="font-script text-2xl text-gold-gradient leading-none pt-1">Fm</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-gold-400 font-semibold block">Fachada Oficial • Vicentina, MS</span>
+                                    <h4 class="font-serif text-base sm:text-lg font-semibold text-champagne leading-tight">Stúdio Detalhes Fernanda</h4>
+                                </div>
+                            </div>
+                            <a href="https://www.google.com/maps/@-22.4110435,-54.4248586,3a,75y,80.8h,87.29t/data=!3m7!1e1!3m5!1sIEu_SCPOEYvUNAdG1ITdhQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.710000000000008%26panoid%3DIEu_SCPOEYvUNAdG1ITdhQ%26yaw%3D80.8!7i16384!8i8192"
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full sm:w-auto bg-gold-gradient text-espresso-950 font-bold text-xs px-4 py-2.5 rounded-xl shadow-gold-sm hover:scale-105 transition-all flex items-center justify-center gap-1.5 shrink-0">
+                                <i class="fa-solid fa-street-view text-sm"></i>
+                                <span>Abrir Street View 360°</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- VIEW 2: Mapa Interativo sem necessidade de chave de API (Oculto por padrão, ativado na aba) -->
+                    <div id="location-view-map" class="hidden relative flex-1 min-h-[390px] sm:min-h-[430px] bg-espresso-950">
+                        <iframe
+                            title="Mapa de Localização Stúdio Detalhes Fernanda - R. Projetada A2, Vicentina, MS"
+                            src="https://maps.google.com/maps?q=-22.4110435,-54.4248586&hl=pt-BR&z=17&output=embed"
+                            class="w-full h-full min-h-[390px] sm:min-h-[430px] border-0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Barra Inferior do Card de Localização -->
+                    <div class="p-4 bg-espresso-950 border-t border-gold-500/20 flex flex-wrap items-center justify-between gap-3 text-xs">
+                        <div class="flex items-center gap-2 text-sand">
+                            <i class="fa-solid fa-map-pin text-gold-400"></i>
+                            <span>R. Projetada A2 - Vicentina, MS, 79710-000</span>
+                        </div>
+                        <a href="https://www.google.com/maps/@-22.4110435,-54.4248586,3a,75y,80.8h,87.29t/data=!3m7!1e1!3m5!1sIEu_SCPOEYvUNAdG1ITdhQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.710000000000008%26panoid%3DIEu_SCPOEYvUNAdG1ITdhQ%26yaw%3D80.8!7i16384!8i8192" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="text-gold-400 hover:text-gold-300 font-semibold flex items-center gap-1">
+                            <span>Ver Fachada no Google Maps</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ LUXUOSO -->
+    <footer class="bg-espresso-950 border-t border-gold-500/25 pt-14 pb-24 md:pb-12 text-sand/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-gold-500/15">
+                <!-- Coluna Marca -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-2xl bg-espresso-800 border border-gold-500/40 flex items-center justify-center">
+                            <span class="font-script text-3xl text-gold-gradient pt-1">Fm</span>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-[0.25em] text-gold-400 font-semibold">Fernanda Marin Beauty</p>
+                            <p class="font-serif text-2xl font-semibold text-champagne">Stúdio Detalhes Fernanda</p>
+                        </div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-sand/75 max-w-sm leading-relaxed">
+                        Salão de Beleza em Vicentina, MS. Especialista em Corte, Escova, Penteados, Selagem, Maquiagem, Colorimetria e Mechas.
+                    </p>
+                    <div class="flex items-center gap-3 pt-1">
+                        <a href="https://wa.me/5567996965770" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                           class="w-10 h-10 rounded-xl bg-espresso-800 hover:bg-gold-500 text-gold-400 hover:text-espresso-950 border border-gold-500/30 flex items-center justify-center transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/studiodetalhes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @studiodetalhes"
+                           class="w-10 h-10 rounded-xl bg-espresso-800 hover:bg-gold-500 text-gold-400 hover:text-espresso-950 border border-gold-500/30 flex items-center justify-center transition-all">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=St%C3%BAdio+Detalhes+Fernanda+Vicentina+MS" target="_blank" rel="noopener noreferrer" aria-label="Google Maps"
+                           class="w-10 h-10 rounded-xl bg-espresso-800 hover:bg-gold-500 text-gold-400 hover:text-espresso-950 border border-gold-500/30 flex items-center justify-center transition-all">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Serviços -->
+                <div class="md:col-span-4 space-y-2.5">
+                    <h4 class="font-serif text-lg font-semibold text-gold-300">Nossos 7 Serviços</h4>
+                    <ul class="grid grid-cols-2 gap-2 text-xs sm:text-sm">
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Corte Personalizado</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Escova Modelada</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Penteados</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Selagem Térmica</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Maquiagem</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Colorimetria</a></li>
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">• Mechas Iluminadas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Contato Rápido -->
+                <div class="md:col-span-3 space-y-2.5 text-xs sm:text-sm">
+                    <h4 class="font-serif text-lg font-semibold text-gold-300">Atendimento</h4>
+                    <p class="text-champagne font-medium">(67) 99696-5770</p>
+                    <p><a href="https://www.instagram.com/studiodetalhes/" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:underline">@studiodetalhes</a></p>
+                    <p>R. Projetada A2 - Vicentina, MS, 79710-000</p>
+                    <p class="text-xs text-sand/60">Plus Code: HHQG+H4 Vicentina, MS</p>
+                    <p class="text-xs text-gold-300 pt-1">★ 4,8 no Google (14 avaliações)</p>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-sand/60 gap-2">
+                <p>© <span id="current-year"></span> Stúdio Detalhes Fernanda (Fernanda Marin Beauty). Todos os direitos reservados.</p>
+                <p>Vicentina • Mato Grosso do Sul</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DE WHATSAPP NO CANTO INFERIOR DIREITO -->
+    <a href="https://wa.me/5567996965770?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20do%20St%C3%BAdio%20Detalhes%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Agendar pelo WhatsApp (67) 99696-5770"
+       class="fixed bottom-5 right-5 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-espresso-950 font-bold pl-4 pr-5 py-3.5 rounded-full shadow-2xl whatsapp-pulse transition-transform hover:scale-105 group">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <div class="text-left leading-tight">
+            <span class="block text-[10px] uppercase tracking-wider font-extrabold opacity-80">Agende Agora</span>
+            <span class="block text-xs sm:text-sm font-bold">(67) 99696-5770</span>
+        </div>
+    </a>
+
+    <!-- SCRIPTS INTERATIVOS -->
+    <script>
+        // Número oficial de WhatsApp do Stúdio Detalhes Fernanda
+        const WHATSAPP_NUMBER = "5567996965770";
+
+        // Lista de URLs oficiais do Google Street View da fachada na R. Projetada A2 (-22.4110435, -54.4248586)
+        const STREETVIEW_URLS = [
+            "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?cb_client=maps_sv.tactile&w=900&h=600&pitch=2.710000000000008&panoid=IEu_SCPOEYvUNAdG1ITdhQ&yaw=80.8",
+            "https://streetviewpixels-pa.clients6.google.com/v1/thumbnail?cb_client=maps_sv.tactile&w=1200&h=800&pitch=2.7099999999999937&panoid=IEu_SCPOEYvUNAdG1ITdhQ&yaw=80.8",
+            "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lEu_SCPOEYvUNAdG1ITdhQ&cb_client=search.gws-prod.gps&w=1200&h=700&yaw=80.8&pitch=0&fov=90",
+            "https://streetviewpixels-pa.clients6.google.com/v1/thumbnail?cb_client=maps_sv.tactile&w=900&h=600&pitch=2.71&panoid=lEu_SCPOEYvUNAdG1ITdhQ&yaw=80.8"
+        ];
+        let currentStreetViewIndex = 0;
+
+        // Tenta automaticamente as variações do servidor Street View caso uma falhe; se todas forem bloqueadas, exibe o SVG fiel da fachada
+        function tryNextStreetViewSource(imgElement) {
+            if (currentStreetViewIndex < STREETVIEW_URLS.length) {
+                imgElement.src = STREETVIEW_URLS[currentStreetViewIndex];
+                currentStreetViewIndex++;
+            } else {
+                imgElement.style.display = "none";
+            }
+        }
+
+        // Alterna entre a visualização da Fachada (Google Street View) e o Mapa Interativo
+        function switchLocationView(view) {
+            const svContainer = document.getElementById("location-view-streetview");
+            const mapContainer = document.getElementById("location-view-map");
+            const btnSv = document.getElementById("tab-btn-streetview");
+            const btnMap = document.getElementById("tab-btn-map");
+
+            if (view === "streetview") {
+                svContainer.classList.remove("hidden");
+                mapContainer.classList.add("hidden");
+                btnSv.className = "px-3.5 py-1.5 rounded-xl bg-gold-gradient text-espresso-950 font-bold text-xs flex items-center gap-1.5 shadow-gold-sm transition-all";
+                btnMap.className = "px-3.5 py-1.5 rounded-xl bg-espresso-800 hover:bg-espresso-700 text-sand border border-gold-500/25 font-medium text-xs flex items-center gap-1.5 transition-all";
+            } else {
+                svContainer.classList.add("hidden");
+                mapContainer.classList.remove("hidden");
+                btnMap.className = "px-3.5 py-1.5 rounded-xl bg-gold-gradient text-espresso-950 font-bold text-xs flex items-center gap-1.5 shadow-gold-sm transition-all";
+                btnSv.className = "px-3.5 py-1.5 rounded-xl bg-espresso-800 hover:bg-espresso-700 text-sand border border-gold-500/25 font-medium text-xs flex items-center gap-1.5 transition-all";
+            }
+        }
+
+        // Permite ao usuário selecionar o print da fachada salvo no computador caso deseje
+        function handleLocalFacadeImage(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById("streetview-facade-img");
+                img.src = e.target.result;
+                img.style.display = "block";
+                switchLocationView("streetview");
+                showToast("Foto da Fachada Atualizada!", "A imagem da fachada foi aplicada no quadro do Google Street View.");
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Catálogo oficial com os 7 serviços da fachada do Stúdio Detalhes Fernanda (APENAS ÍCONES SVG DOURADOS INLINE, SEM FOTOS NOS CARDS)
+        const SERVICES_DATA = [
+            {
+                id: "corte",
+                name: "Corte",
+                category: "cabelos",
+                categoryLabel: "Cabelos & Corte",
+                badge: "Visagismo & Movimento",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3" fill="currentColor" fill-opacity="0.18"/><circle cx="6" cy="18" r="3" fill="currentColor" fill-opacity="0.18"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>`,
+                description: "Cortes personalizados que valorizam seus traços e estilo, trazendo leveza, movimento e praticidade para o seu dia a dia."
+            },
+            {
+                id: "escova",
+                name: "Escova",
+                category: "cabelos",
+                categoryLabel: "Cabelos & Corte",
+                badge: "Brilho & Modelagem",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>`,
+                description: "Alinhamento perfeito, brilho espelhado e modelagem duradoura para você se sentir impecável em qualquer ocasião."
+            },
+            {
+                id: "penteados",
+                name: "Penteados",
+                category: "eventos",
+                categoryLabel: "Produção & Festa",
+                badge: "Noivas, Madrinhas & Festas",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16L2.5 6L8.5 10.5L12 4L15.5 10.5L21.5 6L20 16H4Z" fill="currentColor" fill-opacity="0.2"/><path d="M4 16L2.5 6L8.5 10.5L12 4L15.5 10.5L21.5 6L20 16H4Z"/><path d="M4 19.5H20"/></svg>`,
+                description: "Produções elegantes para noivas, madrinhas, formaturas e eventos especiais, com alta fixação e acabamento sofisticado."
+            },
+            {
+                id: "selagem",
+                name: "Selagem",
+                category: "alinhamento",
+                categoryLabel: "Alinhamento",
+                badge: "Disciplina & Maciez",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5C12 2.5 6 9.2 6 14.2C6 17.7 8.7 20.5 12 20.5C15.3 20.5 18 17.7 18 14.2C18 9.2 12 2.5 12 2.5Z" fill="currentColor" fill-opacity="0.18"/><path d="M12 2.5C12 2.5 6 9.2 6 14.2C6 17.7 8.7 20.5 12 20.5C15.3 20.5 18 17.7 18 14.2C18 9.2 12 2.5 12 2.5Z"/><path d="M9.5 14.5C9.8 16.2 11 17.2 12.8 17.5"/></svg>`,
+                description: "Redução de volume, controle absoluto de frizz e reconstrução térmica que devolve a maciez e o alinhamento natural aos fios."
+            },
+            {
+                id: "maquiagem",
+                name: "Maquiagem",
+                category: "eventos",
+                categoryLabel: "Produção & Festa",
+                badge: "Pele Blindada & Glow",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18.37 2.63-1.4 1.4a2 2 0 0 0 0 2.83l1.17 1.17a2 2 0 0 0 2.83 0l1.4-1.4a2 2 0 0 0 0-2.83l-1.17-1.17a2 2 0 0 0-2.83 0Z" fill="currentColor" fill-opacity="0.2"/><path d="m9 12 6.9-6.9"/><path d="M11 14c-1.93 1.93-5.5 2.5-8 2 0 0 .57-3.57 2.5-5.5a3.89 3.89 0 0 1 5.5 3.5Z" fill="currentColor" fill-opacity="0.2"/><path d="M11 14c-1.93 1.93-5.5 2.5-8 2 0 0 .57-3.57 2.5-5.5a3.89 3.89 0 0 1 5.5 3.5Z"/></svg>`,
+                description: "Maquiagem profissional realçando sua beleza com acabamento impecável, alta durabilidade e técnicas que valorizam seu olhar."
+            },
+            {
+                id: "colorimetria",
+                name: "Colorimetria",
+                category: "cor",
+                categoryLabel: "Cor & Iluminação",
+                badge: "Diagnóstico de Tom",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.13-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C21.97 6.01 17.46 2 12 2Z" fill="currentColor" fill-opacity="0.16"/><circle cx="7.5" cy="10.5" r="1.2" fill="currentColor"/><circle cx="11.5" cy="7.5" r="1.2" fill="currentColor"/><circle cx="16" cy="10" r="1.2" fill="currentColor"/><circle cx="7.5" cy="15" r="1.2" fill="currentColor"/></svg>`,
+                description: "Estudo personalizado de tom, cobertura perfeita e saúde capilar, encontrando a nuance ideal que ilumina seu rosto."
+            },
+            {
+                id: "mechas",
+                name: "Mechas",
+                category: "cor",
+                categoryLabel: "Cor & Iluminação",
+                badge: "Especialidade da Casa",
+                svgIcon: `<svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14.3 8.5L20.8 10.8L14.3 13.1L12 19.6L9.7 13.1L3.2 10.8L9.7 8.5L12 2Z" fill="currentColor" fill-opacity="0.22"/><path d="M12 2L14.3 8.5L20.8 10.8L14.3 13.1L12 19.6L9.7 13.1L3.2 10.8L9.7 8.5L12 2Z"/><path d="M19 16L19.8 18.2L22 19L19.8 19.8L19 22L18.2 19.8L16 19L18.2 18.2L19 16Z" fill="currentColor"/><path d="M5 17L5.6 18.6L7.2 19.2L5.6 19.8L5 21.4L4.4 19.8L2.8 19.2L4.4 18.6L5 17Z" fill="currentColor"/></svg>`,
+                description: "Loiros iluminados, morena iluminada e técnicas modernas de clareamento com transição suave e preservação da fibra capilar."
+            }
+        ];
+
+        // Estado do Montador de Agendamento Rápido
+        let selectedServices = new Set(["Mechas", "Corte", "Escova"]);
+        let selectedShift = "Manhã (a partir das 07:00)";
+
+        // Função utilitária de Toast (substitui qualquer uso de alert)
+        function showToast(title, message) {
+            const toast = document.getElementById("toast-notification");
+            document.getElementById("toast-title").textContent = title;
+            document.getElementById("toast-message").textContent = message;
+            toast.classList.remove("translate-x-[150%]");
+            setTimeout(() => {
+                toast.classList.add("translate-x-[150%]");
+            }, 3400);
+        }
+
+        // Renderiza os cards de serviço na seção #servicos (Layout limpo com Quadrado + Ícone SVG Dourado, sem fotos)
+        function renderServiceCards(filter = "todos") {
+            const grid = document.getElementById("services-grid");
+            grid.innerHTML = "";
+
+            const filtered = filter === "todos"
+                ? SERVICES_DATA
+                : SERVICES_DATA.filter(item => item.category === filter);
+
+            filtered.forEach((service) => {
+                const isSelectedInBuilder = selectedServices.has(service.name);
+                const directWhatsAppText = encodeURIComponent(
+                    `Olá, Fernanda! Vim pelo site do Stúdio Detalhes e gostaria de saber mais e agendar um horário para *${service.name}*.`
+                );
+
+                const card = document.createElement("div");
+                card.className = "p-6 sm:p-7 rounded-3xl bg-espresso-800/90 gold-border gold-border-hover flex flex-col justify-between space-y-6 group";
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <!-- Topo do Card: Quadrado com Ícone SVG Dourado na Esquerda + Badge na Direita -->
+                        <div class="flex items-center justify-between gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-[#2A231B] border border-[#D4AF37]/40 flex items-center justify-center shadow-gold-sm group-hover:border-[#D4AF37] transition-all">
+                                ${service.svgIcon}
+                            </div>
+                            <span class="px-3.5 py-1 rounded-full bg-espresso-950/85 border border-gold-500/30 text-[11px] text-gold-300 font-medium">
+                                ${service.badge}
+                            </span>
+                        </div>
+
+                        <!-- Categoria, Nome e Descrição -->
+                        <div class="pt-1">
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-gold-400/90 font-semibold block">${service.categoryLabel}</span>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-champagne mt-1">${service.name}</h3>
+                            <p class="text-sm text-sand/85 leading-relaxed mt-2.5">
+                                ${service.description}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gold-500/15 flex flex-col sm:flex-row gap-2.5">
+                        <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${directWhatsAppText}"
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex-1 bg-gold-gradient text-espresso-950 font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-gold-sm hover:shadow-gold-glow transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Agendar ${service.name}</span>
+                        </a>
+                        <button type="button"
+                                onclick="toggleServiceFromCard('${service.name}')"
+                                class="px-4 py-3 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                                    isSelectedInBuilder
+                                        ? "bg-gold-500/20 border-gold-400 text-gold-300"
+                                        : "bg-espresso-900 border-gold-500/25 text-sand hover:border-gold-400/60"
+                                }"
+                                title="Adicionar ou remover do Montador de Agendamento">
+                            <span>${isSelectedInBuilder ? "✓ No Combo" : "+ Combo"}</span>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Renderiza os checkboxes no Montador de Agendamento Rápido usando apenas o Ícone SVG Dourado
+        function renderBuilderCheckboxes() {
+            const container = document.getElementById("builder-services-list");
+            container.innerHTML = "";
+
+            SERVICES_DATA.forEach((service) => {
+                const isChecked = selectedServices.has(service.name);
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.onclick = () => toggleBuilderService(service.name);
+                btn.className = `w-full text-left p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 ${
+                    isChecked
+                        ? "bg-gold-500/15 border-gold-400 shadow-gold-sm"
+                        : "bg-espresso-800/80 border-gold-500/20 hover:border-gold-500/45"
+                }`;
+
+                btn.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#26201B] border ${
+                            isChecked ? "border-gold-400" : "border-[#D4AF37]/30"
+                        } flex items-center justify-center shrink-0">
+                            ${service.svgIcon}
+                        </div>
+                        <div>
+                            <p class="font-serif text-lg font-semibold text-champagne leading-tight">${service.name}</p>
+                            <p class="text-[11px] text-sand/70">${service.badge}</p>
+                        </div>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg border ${
+                        isChecked
+                            ? "bg-gold-400 border-gold-300 text-espresso-950"
+                            : "border-gold-500/35 bg-espresso-900 text-transparent"
+                    } flex items-center justify-center shrink-0 transition-all">
+                        <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                `;
+                container.appendChild(btn);
+            });
+
+            updateBookingPreview();
+        }
+
+        // Alterna serviço a partir dos cards superiores
+        function toggleServiceFromCard(serviceName) {
+            if (selectedServices.has(serviceName)) {
+                selectedServices.delete(serviceName);
+                showToast("Removido do Combo", `${serviceName} foi removido do seu agendamento.`);
+            } else {
+                selectedServices.add(serviceName);
+                showToast("Adicionado ao Combo!", `${serviceName} foi incluído no montador de agendamento.`);
+            }
+            const activeFilterBtn = document.querySelector(".filter-btn.active-filter");
+            const currentFilter = activeFilterBtn ? activeFilterBtn.getAttribute("data-filter") : "todos";
+            renderServiceCards(currentFilter);
+            renderBuilderCheckboxes();
+        }
+
+        // Alterna serviço dentro do Montador
+        function toggleBuilderService(serviceName) {
+            if (selectedServices.has(serviceName)) {
+                selectedServices.delete(serviceName);
+            } else {
+                selectedServices.add(serviceName);
+            }
+            const activeFilterBtn = document.querySelector(".filter-btn.active-filter");
+            const currentFilter = activeFilterBtn ? activeFilterBtn.getAttribute("data-filter") : "todos";
+            renderServiceCards(currentFilter);
+            renderBuilderCheckboxes();
+        }
+
+        // Seleciona um combo pronto
+        function selectPresetCombo(servicesArray) {
+            selectedServices = new Set(servicesArray);
+            const activeFilterBtn = document.querySelector(".filter-btn.active-filter");
+            const currentFilter = activeFilterBtn ? activeFilterBtn.getAttribute("data-filter") : "todos";
+            renderServiceCards(currentFilter);
+            renderBuilderCheckboxes();
+            showToast("Combo Selecionado!", servicesArray.join(" + "));
+        }
+
+        // Limpa seleção
+        function clearSelectedServices() {
+            selectedServices.clear();
+            const activeFilterBtn = document.querySelector(".filter-btn.active-filter");
+            const currentFilter = activeFilterBtn ? activeFilterBtn.getAttribute("data-filter") : "todos";
+            renderServiceCards(currentFilter);
+            renderBuilderCheckboxes();
+        }
+
+        // Constrói o texto da mensagem de WhatsApp em tempo real
+        function buildWhatsAppMessage() {
+            const clientName = document.getElementById("client-name").value.trim();
+            const clientNotes = document.getElementById("client-notes").value.trim();
+            const servicesList = Array.from(selectedServices);
+
+            const greeting = clientName
+                ? `Olá, Fernanda! Me chamo *${clientName}*.`
+                : `Olá, Fernanda! Tudo bem?`;
+
+            const servicesPart = servicesList.length > 0
+                ? `Gostaria de agendar um horário no *Stúdio Detalhes* para: *${servicesList.join(" + ")}*.`
+                : `Gostaria de consultar disponibilidade de horário no *Stúdio Detalhes*.`;
+
+            const shiftPart = `Tenho preferência pelo período da *${selectedShift}*.`;
+            const notesPart = clientNotes ? `Observação: _${clientNotes}_.` : "";
+
+            return [greeting, servicesPart, shiftPart, notesPart].filter(Boolean).join(" ");
+        }
+
+        // Atualiza a prévia da mensagem no card
+        function updateBookingPreview() {
+            const countBadge = document.getElementById("selected-count-badge");
+            const previewEl = document.getElementById("whatsapp-preview-text");
+            const count = selectedServices.size;
+
+            countBadge.textContent = count === 1 ? "1 procedimento" : `${count} procedimentos`;
+            previewEl.textContent = `"${buildWhatsAppMessage()}"`;
+        }
+
+        // Copia o endereço completo usando execCommand para compatibilidade total
+        function copyAddress() {
+            const addressText = "Stúdio Detalhes Fernanda - R. Projetada A2 - Vicentina, MS, 79710-000 (Plus Code: HHQG+H4 Vicentina, Mato Grosso do Sul)";
+            const tempInput = document.createElement("textarea");
+            tempInput.value = addressText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showToast("Endereço Copiado!", "R. Projetada A2 - Vicentina, MS copiado para a área de transferência.");
+        }
+
+        // Inicialização ao carregar o DOM
+        document.addEventListener("DOMContentLoaded", () => {
+            // Ano atual no rodapé
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+
+            // Renderização inicial
+            renderServiceCards("todos");
+            renderBuilderCheckboxes();
+
+            // Eventos dos botões de filtro de categoria
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            filterButtons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    filterButtons.forEach((b) => {
+                        b.classList.remove("active-filter", "bg-gold-gradient", "text-espresso-950", "shadow-gold-sm", "font-semibold");
+                        b.classList.add("bg-espresso-800", "text-sand");
+                    });
+                    btn.classList.remove("bg-espresso-800", "text-sand");
+                    btn.classList.add("active-filter", "bg-gold-gradient", "text-espresso-950", "shadow-gold-sm", "font-semibold");
+
+                    const filterValue = btn.getAttribute("data-filter");
+                    renderServiceCards(filterValue);
+                });
+            });
+
+            // Eventos dos botões de turno (Manhã / Tarde / Flexível)
+            const shiftButtons = document.querySelectorAll(".shift-btn");
+            shiftButtons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    shiftButtons.forEach((b) => {
+                        b.classList.remove("active-shift", "border-gold-400", "bg-gold-500/20", "text-gold-300", "font-semibold");
+                        b.classList.add("border-gold-500/25", "bg-espresso-800", "text-sand");
+                    });
+                    btn.classList.remove("border-gold-500/25", "bg-espresso-800", "text-sand");
+                    btn.classList.add("active-shift", "border-gold-400", "bg-gold-500/20", "text-gold-300", "font-semibold");
+
+                    selectedShift = btn.getAttribute("data-shift");
+                    updateBookingPreview();
+                });
+            });
+
+            // Atualização em tempo real ao digitar nome ou observação
+            document.getElementById("client-name").addEventListener("input", updateBookingPreview);
+            document.getElementById("client-notes").addEventListener("input", updateBookingPreview);
+
+            // Botão de enviar agendamento no WhatsApp
+            document.getElementById("send-booking-whatsapp").addEventListener("click", () => {
+                if (selectedServices.size === 0) {
+                    showToast("Selecione um serviço", "Marque pelo menos 1 procedimento para montar seu agendamento.");
+                    return;
+                }
+                const message = buildWhatsAppMessage();
+                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+                window.open(url, "_blank", "noopener,noreferrer");
+            });
+
+            // Controle do Menu Mobile
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                const isHidden = mobileMenu.classList.contains("hidden");
+                if (isHidden) {
+                    mobileMenu.classList.remove("hidden");
+                    mobileMenuIcon.classList.remove("fa-bars");
+                    mobileMenuIcon.classList.add("fa-xmark");
+                } else {
+                    mobileMenu.classList.add("hidden");
+                    mobileMenuIcon.classList.remove("fa-xmark");
+                    mobileMenuIcon.classList.add("fa-bars");
+                }
+            });
+
+            // Fecha menu mobile ao clicar em qualquer link
+            document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileMenu.classList.add("hidden");
+                    mobileMenuIcon.classList.remove("fa-xmark");
+                    mobileMenuIcon.classList.add("fa-bars");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
